@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+main {
+	font-family: 'Poppins', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	color: var(--light-color-white);
+	font-size: var(--font-size-sm);
+	font-weight: 700;
+}
+
+h3, p {
+	color: var(--light-color-white);
+}
+
+ul li {
+	list-style-type: none;
+}
+
+button {
+	color: var(--light-color-white);
+	background-color: var(--secondary-color);
+	font-size: var(--font-size-xxs);
+	border: none;
+	outline: none;
+	width: 6em;
+	padding: 0.5em;
+	cursor: pointer;
+	margin: 2em 0 0 0;
+}
+
+:root {
+	--light-color-smoke: #f5f5f5;
+    --light-color-white: #ffffff;
+    --dark-color-black: #000000;
+    --primary-color: #145086;
+    --secondary-color: #FA5370;;
+    --font-size-xxs: 1.2rem;
+    --font-size-xs: 1.5rem;
+    --font-size-sm: 2rem;
+    --font-size-m: 2.5rem;
+    --font-size-l: 3rem;
+    --font-size-xl: 5rem;
+	--gradient: linear-gradient(to top, rgba( 0, 0, 0, 0.5)50%, rgba( 0, 0, 0, 0.5)50%);
+}
+
+/* <!-- FIRST_SECTION --> */
+
+.first_section {
+    width: 100%;
+	/* height: 10vh; */
+    background-image: linear-gradient(to top, rgba( 0, 0, 0, 0.6), rgba( 0, 0, 0, 0.6)), url("../images/home-cleaning-banner.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 1em;
+}
+
+
+/* <!-- HEADER --> */
+
+.nav_bar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav_menu {
+	width: 100%;
+	height: 15em;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary-color);
+	display: none;
+}
+
+.nav_menu ul li {
+	border: 1px solid var(--light-color-white);
+	border-left: none;
+	border-right: none;
+	padding: 0.5em 2em 0.5em 0.5em;
+}
+
+.nav_menu a:hover {
+	color: var(--secondary-color);
+}
+
+.nav_menu a {
+	font-size: var(--font-size-xxs);
+	color: var(--light-color-white);
+}
+
+.menuIcon {
+	font-size: var(--font-size-xxs);
+	border-radius: 0;
+	outline: none;
+	border: none;
+	width: auto;
+	padding: 10px;
+	margin-top: 1em;
+	cursor: pointer;
+	color: var(--secondary-color);
+	background-color: var(--light-color-white);
+}
+
+#close_menu_icon {
+	display: none;
+}
+
+.list_span {
+	display: none;
+}
+
+
+/* <!-- SECTION__HERO --> */
+
+
+.hero_section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero_h1, .hero_p {
+	color: var(--light-color-white);
+	text-align: center;
+}
+
+.hero_section h1 {
+	font-size: var(--font-size-l);
+	font-weight: 700;
+	margin-top: 2em;
+}
+
+.hero_section p {
+	font-size: var(--font-size-xxs);
+	font-weight: 700;
+	margin-top: 2em;
+}
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90vw;
+	height: 18em;
+	margin-top: 5em;
+	margin-bottom: -5em;
+	color: var(--light-color-white);
+	background-color: var(--secondary-color);
+}
+
+.container img {
+	width: 20vw;
+}
+
+.container h3 {
+	margin-top: 1em;
+	font-size: var(--font-size-sm);
+}
+
+/* <!-- SECTION__ABOUT --> */
+
+.about_section {
+	padding-top: 5em;
+	background-color: var(--primary-color);
+}
+
+.about_section img {
+	width: 100%;
+	margin-top: 2em;
+	height: auto;	
+}
+
+.about_container_second {
+	padding: 3em 1.5em 0 1.5em;
+}
+
+.about_container_second p {
+	margin-top: 2em;
+}
+
+/* <!-- SECTION__SERVICES --> */
+
+.services_section {
+	background: var(--primary-color);
+	/* text-align: center; */
+	padding: 4em 0 0 0;
+}
+
+.services_heading, .services_paragraph {
+	text-align: center;
+}
+
+.services_section p {
+	margin: 0 1em 2em 1em;
+}
+
+.services_section_container {
+	display: flex;
+	flex-direction: column;
+}
+
+.services_container {
+	width: 100%;
+	height: 40vh;
+	background-image: linear-gradient( rgba(250, 83, 112, 0.8), rgba(250, 83, 112, 0.8)), url("../images/hand-washing.jpg");
+	color: var(--light-color-white);
+	text-align: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.services_container:hover,
+.services_container:nth-child(2):hover,
+.services_container:nth-child(3):hover,
+.services_container:nth-child(4):hover,
+.services_container:nth-child(5):hover,
+.services_container:nth-child(6):hover,
+.services_container:nth-child(7):hover,
+.services_container:last-child:hover {
+	background: var(--primary-color);
+}
+
+.services_container:nth-child(2) {
+	background-image: linear-gradient( rgba(250, 83, 112, 0.8), rgba(250, 83, 112, 0.8)), url("../images/cloth-iron.jpg");
+	background-size: cover;
+}
+.services_container:nth-child(3) {
+	background-image: linear-gradient( rgba(250, 83, 112, 0.8), rgba(250, 83, 112, 0.8)), url("../images/washing-machine.jpg");
+	background-size: cover;
+}
+.services_container:nth-child(4) {
+	background-image: linear-gradient( rgba(250, 83, 112, 0.8), rgba(250, 83, 112, 0.8)), url("../images/cleaning-services-clothes.jpg");
+	background-size: cover;
+}
+.services_container:nth-child(5) {
+	background-image: linear-gradient( rgba(250, 83, 112, 0.8), rgba(250, 83, 112, 0.8)), url("../images/window-cleaning.jpg");
+	background-size: cover;
+}
+.services_container:nth-child(6) {
+	background-image: linear-gradient( rgba(250, 83, 112, 0.8), rgba(250, 83, 112, 0.8)), url("../images/cleaning-services-gutter.jpg");
+	background-size: cover;
+}
+.services_container:nth-child(7) {
+	background-image: linear-gradient( rgba(250, 83, 112, 0.8), rgba(250, 83, 112, 0.8)), url("../images/cleaning-services-roof.jpg");
+	background-size: cover;
+}
+.services_container:last-child {
+	background-image: linear-gradient( rgba(250, 83, 112, 0.8), rgba(250, 83, 112, 0.8)), url("../images/carpet-cleaning.jpg");
+	background-size: cover;
+}
+
+.services_container a {
+	color: var(--light-color-white);
+}
+
+/* <!-- SECTION__WHY CHOOSE US --> */
+
+.why_choose_us_section {
+	background-image: linear-gradient( rgba(20, 80, 134, 1), rgba(20, 80, 134, 1)), url("../images/bg-02-free-img.png");
+	/* background-size: cover; */
+	background-attachment: fixed;
+	padding: 3em 1.5em 3em 1.5em;
+}
+
+
+.why_choose_us_section {
+	margin: auto;
+	padding-top: 4em;
+}
+
+.why_choose_us {
+	display: flex;
+	flex-direction: column;
+}
+
+.why_us_heading, .why_us_paragraph_second {
+	margin-top: 1em;
+}
+
+.why_us_paragraph_first {
+	margin-top: 2em;
+}
+
+.why_us_paragraph_first {
+	font-size: 1em;
+	font-weight: 700;
+}
+
+
+/* <!-- SECTION__TESTIMONIALS --> */
+
+.testimonial_section {
+	padding: 3em 1.5em 3em 1.5em;
+	background-image: linear-gradient( rgba(20, 80, 134, 0.8), rgba(20, 80, 134, 0.8)), url("../images/banner-bg-cleaning-service.jpg");
+	/* background-size: cover; */
+	background-attachment: fixed;
+}
+
+.family_image {
+	background-image: url(../images/family-in-home.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 45vh;
+	margin-bottom: 4em;
+}
+
+hr {
+	background: var(--light-color-white);
+	margin-top: 2em;
+	border: none;
+	height: 1px;
+}
+
+.qoute {
+	width: 15vw;
+	margin-top: 1em;
+}
+
+
+/* <!-- SECTION__CONTACT --> */
+
+.contact_section {
+	padding: 3em 1.5em 3em 1.5em;
+	background-image: linear-gradient( rgba(250, 83, 112, 1), rgba(250, 83, 112, 1)), url("../images/bg-02-free-img.png");
+	/* background-size: cover; */
+	background-attachment: fixed;
+	color: rgb(250, 83, 112);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.contact_button {
+	color: var(--secondary-color);
+	background: var(--light-color-white);
+	margin-bottom: 1em;
+}
+
+.contact_section h3 {
+	margin-top: 1em;
+}
+
+/* <!-- FOOTER --> */
+
+footer {
+	padding: 3em 1.5em 3em 1.5em;
+	background-color: var(--primary-color);
+	text-align: center;
+}
+
+.footer_menu li {
+	margin-top: 1em;
+}
+
+.footer_menu a {
+	color: var(--light-color-white);
+}
+
+.footer_menu a:hover {
+	color: var(--secondary-color);
+}
+
+
+/* ///// RESPONSIVENESS  ////// */
+
+@media screen and (min-width: 43.75em) {
+	/* <!-- FIRST_SECTION --> */
+
+	/* <!-- SECTION__HERO --> */
+
+
+.hero_section {
+	display: flex;
+	align-items: start;
+	padding: 0 0 0 2em;
+}
+
+.hero_h1, .hero_p {
+	text-align: start;
+}
+
+
+.container {
+	display: flex;
+	flex-direction: row;
+	width: 30em;
+	height: 10em;
+	position: relative;
+	top: -2em;
+	left: 11.7em;
+	
+}
+
+.container img {
+	width: 6em;
+	padding-right: 0.5em;
+}
+
+.container h3 {
+	margin-top: -0.2em;
+}
+
+/* <!-- SECTION__ABOUT --> */
+
+.about_section {
+	display: flex;
+	flex-direction: row;
+}
+
+.about_section img {
+	width: 25em;
+	margin-top: 2em;
+	height: auto;	
+}
+
+.about_container_second {
+	padding: 2em 1em 0 1em;
+}
+
+
+/* <!-- SECTION__SERVICES --> */
+
+.services_section_container {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+
+
+/* <!-- SECTION__WHY CHOOSE US --> */
+
+.why_choose_us {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	padding-inline: 3em;
+	gap: 1em;
+}
+
+/* <!-- SECTION__TESTIMONIALS --> */
+
+.testimonial_section {
+	padding: 3em 1.5em 3em 1.5em;
+}
+
+.family_image {
+	width: 100%;
+	height: 50em;
+}
+
+.qoute {
+	width: 8vw;
+	margin-top: 1em;
+}
+
+/* <!-- FOOTER --> */
+
+footer {
+	display: flex;
+	text-align: start;
+}
+
+.footer_menu li {
+	margin-top: auto;
+}
+
+}
+
+@media screen and (min-width: 48em) {
+
+	/* <!-- SECTION__HERO --> */
+
+
+.hero_section h1 {
+	margin: 3em 0 0 0;
+}
+
+
+.container {
+	width: 51.6vw;
+	height: 8em;
+	position: relative;
+	top: -2em;
+	left: 46%;
+	
+}
+
+/* <!-- SECTION__ABOUT --> */
+
+.about_section img {
+	width: 48vw;
+	margin-top: -2em;
+	height: auto;	
+}
+
+footer {
+	justify-content: space-between;
+}
+
+}
+
+@media screen and (min-width: 992px) {} 
+
+@media screen and (min-width: 64em) {
+
+	/* <----------HEADER ----------> */
+	.menuIcon {
+		display: none;
+	}
+
+	.nav_menu {
+		width: auto;
+		height: 0;
+		background: none;
+		display: contents;
+	}
+
+	.nav_menu ul li {
+		display: grid;
+		border: none;
+		padding: 0.5em;
+	}
+
+	.nav_menu ul {
+		display: flex;
+	}
+
+	.list_span {
+		display: block;
+		color: var(--light-color-white);
+	}
+
+
+	/* <!-- SECTION__HERO --> */
+
+
+	.hero_section h1 {
+		margin: 3em 0 0 0;
+	}
+
+
+	.container {
+		width: 31em;
+		height: 8em;
+		position: relative;
+		top: -2em;
+		left: 50%;
+		
+	}
+
+
+	/* <!-- SECTION__ABOUT --> */
+
+	.about_section {
+		padding-left: 1em;
+	}
+
+	.about_section img {
+		width: 32em;
+		margin-top: -2em;
+		height: auto;	
+	}
+
+	.about_container_second {
+		padding: 2em 1em 0 1em;
+	}
+
+
+}
+
+@media screen and (min-width: 75em) {
+
+
+
+/* <!-- SECTION__HERO --> */
+
+
+.hero_section h1 {
+	font-size: var(--font-size-xl);
+	margin: 3em 0 0 0;
+}
+
+.hero_section p {
+	font-size: var(--font-size-xxs);
+}
+
+
+	.container {
+		width: 50%;
+		height: 8em;
+		position: relative;
+		top: -2em;
+		left: 50%;	
+	}
+	
+/* <!-- SECTION__ABOUT --> */
+
+.about_section {
+	padding-left: 11.2em;
+}
+
+.about_section img {
+	width: 32em;
+	margin-top: -2em;
+	height: auto;	
+}
+
+.about_container_second {
+	padding: 2em 4em 0 3em;
+}
+
+/* <!-- SECTION__SERVICES --> */
+
+.services_section_container {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+}
+
+.services_container {
+	height: 25em;
+}
+
+
+/* <!-- SECTION__TESTIMONIALS --> */
+
+.testimonial_section {
+	padding: 3em;
+	display: flex;
+	flex-direction: row-reverse;
+	/* gap: 2em; */
+	justify-content: space-between;
+}
+
+.testimonial_section_first {
+	width: 70%;
+}
+
+.family_image {
+	width: 30%;
+	height: 40em;
+	margin-bottom: 4em;
+}
+
+hr {
+	width: 100%;
+}
+
+.qoute {
+	width: 5vw;
+}
+
+h2 {
+	font-size: var(--font-size-l);
+}
+
+.testimonial_section_first h3 {
+	font-size: var(--font-size-sm);
+}
+
+
+}
+
+@media screen and (min-width: 1500px) {}
+
+/* ///// MOBILE DEVICE LANDSCAPE  ////// */
+
+@media screen and (max-height: 425px) and
+(min-aspect-ratio: 7/4) {}

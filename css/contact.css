@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+main {
+	font-family: 'Poppins', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	color: var(--light-color-white);
+	font-size: var(--font-size-sm);
+	font-weight: 700;
+}
+
+h3, p {
+	color: var(--light-color-white);
+}
+
+ul li {
+	list-style-type: none;
+}
+
+button {
+	color: var(--light-color-white);
+	background-color: var(--secondary-color);
+	font-size: var(--font-size-xxs);
+	border: none;
+	outline: none;
+	width: 6em;
+	padding: 0.5em;
+	cursor: pointer;
+	margin: 2em 0 0 0;
+}
+
+:root {
+	--light-color-smoke: #f5f5f5;
+    --light-color-white: #ffffff;
+    --dark-color-black: #000000;
+    --primary-color: #145086;
+    --secondary-color: #FA5370;;
+    --font-size-xxs: 1.2rem;
+    --font-size-xs: 1.5rem;
+    --font-size-sm: 2rem;
+    --font-size-m: 2.5rem;
+    --font-size-l: 3rem;
+    --font-size-xl: 5rem;
+	--gradient: linear-gradient(to top, rgba( 0, 0, 0, 0.5)50%, rgba( 0, 0, 0, 0.5)50%);
+}
+
+
+
+/* <---------MEDIA QUERY---------->  */
+
+@media screen and (min-width: 43.75em) {}     /* 700px */
+
+@media screen and (min-width: 48em) {}        /* 768px */
+
+@media screen and (min-width: 64em) {}       /* 1024px */
+
+@media screen and (min-width: 75em) {}       /* 1200px */
+
+@media screen and (min-width: 93.75) {}      /* 1500px */
